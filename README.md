@@ -54,12 +54,16 @@ To install dependencies: "pip install requests"
 
 Automation Example:
 Run the script hourly using cron:
+
 crontab -e
+
 Add:
+
 0 * * * * /usr/bin/python3 /path/to/generate_ip_lists.py
 
 
 IMPORTANT NOTE:
+
 IP Allocation does not mean the actual Physical Location is correct. These lists are based on RIR allocation data, not real-time geolocation.
 
 - IPs may be used outside their registered country
