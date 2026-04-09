@@ -37,11 +37,12 @@ By default, the script writes files to:
 Which should be perfect for publishing your own private list to your own web server for you own use case.
 
 Example:
-/var/www/ip-lists/
-├── US.txt
-├── CA.txt
-├── DE.txt
-└── last_updated.txt
+/var/www/ip-lists/<Country_code.txt>
+
+e.g:
+US.txt
+CA.txt
+DE.txt
 
 
 Requirements:
@@ -54,7 +55,6 @@ To install dependencies: "pip install requests"
 Automation Example:
 Run the script hourly using cron:
 crontab -e
-
 Add:
 0 * * * * /usr/bin/python3 /path/to/generate_ip_lists.py
 
